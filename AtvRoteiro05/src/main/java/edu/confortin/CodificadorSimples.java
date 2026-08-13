@@ -1,3 +1,4 @@
+package edu.confortin;
 import java.time.LocalDate;
 
 public class CodificadorSimples implements Codificador {
@@ -25,11 +26,11 @@ public class CodificadorSimples implements Codificador {
 
     public String decodifica(String str) {
         StringBuilder encoded = new StringBuilder();
-        
+
         for (char c : str.toCharArray()) {
             encoded.append((char) (c - 1));
         }
-        
+
         return encoded.toString();
     }
 }

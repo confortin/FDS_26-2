@@ -1,3 +1,4 @@
+package edu.confortin;
 import java.time.LocalDate;
 
 public interface Codificador {
