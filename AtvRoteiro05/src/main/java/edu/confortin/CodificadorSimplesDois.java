@@ -1,25 +1,33 @@
-import java.time.LocalDate; //chamada para horarios
+package edu.confortin;
 
-public class CodificadorSimplesDois implements Codificador{
-    public String getNome(){
+import java.time.LocalDate;
+
+public class CodificadorSimplesDois implements Codificador {
+
+
+    public String getNome() {
         return "Codificador Dois";
     }
 
-    public LocalDate getData(){
+
+    public LocalDate getDataCriacao() {
         return LocalDate.now();
     }
 
-    public int nivelSeguranca(){
+
+    public int getNivelSeguranca() {
         return 1;
     }
 
-    public String codifica(String a){
+
+    public String codifica(String a) {
         String saida = a.toLowerCase();
-        System.out.println(a);
-    }
-    public String descodifica(String a){
-        String saida = a.toLowerCase();
-        System.out.println(a);
+        return saida;
     }
 
+
+    public String decodifica(String a) {
+        String saida = a.toLowerCase();
+        return saida;
+    }
 }
